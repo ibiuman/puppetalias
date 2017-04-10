@@ -11,7 +11,7 @@ kirjoitimme jotain tekstiä ja sitten käytin komentoja **git add .** ja **git c
 
 ## Modulin luonti ja testaus ##
 Aloitin tekemällä githubiin uuden repositoryn tehtävää varten. Tämän jälkeen suoritin komennon **git clone https://github.com/ibiuman/puppetalias.git**, jotta
-pääsemme muokkaamaan tuota repositorya. Kerroimme gitille kuka olen kommennoilla **git config --global user.mail "ville.kauppinen@gmail.com** ja **git config --global
+pääsemme muokkaamaan tuota repositorya. Kerroimme gitille kuka olen kommennoilla **git config --global user.mail "ville.kauppinen@gmail.com"** ja **git config --global
 user.name "Ville Kauppinen"**. Sitten vielä laitoin githubin kirjautumisen muistiin komennolla **git config --global credential.helper "cache --timeout=3600". Tämä siksi
 ettei tarvitse, joka kerta repositorya muokatessa laittaa käyttäjätunnusta ja salasanaa.
 
