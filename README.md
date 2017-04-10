@@ -16,4 +16,4 @@ user.name "Ville Kauppinen"**. Sitten vielä laitoin githubin kirjautumisen muis
 ettei tarvitse, joka kerta repositorya muokatessa laittaa käyttäjätunnusta ja salasanaa.
 
 Aloitin luomalla moduulille kansion /etc/puppet/modules/ paikkaan komennolla **sudo mkdir xtermcolors**. Sen sisään tein kansiot templates ja manifests. Manifests kansion sisään
-tein tiedoston init.pp komennolla **sudoedit init.pp** jonne kirjoitin seuraavan koodinpätkän: ![alt text](/home/ville/Pictures/modulecode.png)
+tein tiedoston init.pp komennolla **sudoedit init.pp** jonne kirjoitin seuraavan koodinpätkän: ![alt text](https://github.com/ibiuman/puppetalias/blob/master/modulecode.png)
