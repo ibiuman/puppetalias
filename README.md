@@ -17,3 +17,9 @@ ettei tarvitse, joka kerta repositorya muokatessa laittaa käyttäjätunnusta ja
 
 Aloitin luomalla moduulille kansion /etc/puppet/modules/ paikkaan komennolla **sudo mkdir xtermcolors**. Sen sisään tein kansiot templates ja manifests. Manifests kansion sisään
 tein tiedoston init.pp komennolla **sudoedit init.pp** jonne kirjoitin seuraavan koodinpätkän: ![alt text](https://github.com/ibiuman/puppetalias/blob/master/modulecode.png)
+Sitten menin templates kansioon ja syötin komennon **sudo cp /etc/X11/app-defaults/XTerm-color /etc/puppet/modules/xtermcolors/templates/XTerm-color.erb** eli kopion tuon 
+XTerm-color tiedoston templates kansioon ja vaihdoin samalla sen tiedostonimen perään .erb. Tämän jälkeen **sudoedit XTerm-color.erb** komennolla kävin vaihtamassa
+*VT100*foreground: ja *VT100*background: kohdat haluamakseni väreiksi. 
+
+Ennen moduulit suorittamista xterm näytti tältä: ![alt text](https://github.com/ibiuman/puppetalias/blob/master/xtermbefore.png). Moduuli ajettiin komennolla
+**sudo puppet apply -e 'file {"xtermcolors":}'**. Tämän jälkeen xterm näyttää tältä: ![alt text](https://github.com/ibiuman/puppetalias/blob/master/xtermafter.png)
