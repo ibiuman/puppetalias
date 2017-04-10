@@ -29,3 +29,5 @@ Sitten kopioimme vielä tuon moduulikansion git projektikansioon ja siirsimme se
 http://terokarvinen.com/2017/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-2-%E2%80%93-5-op-uusi-ops-loppukevat-2017-p2
 http://terokarvinen.com/2016/publish-your-project-with-github
 https://guides.github.com/features/mastering-markdown/
+
+-Ville Kauppinen
