@@ -15,4 +15,5 @@ pääsemme muokkaamaan tuota repositorya. Kerroimme gitille kuka olen kommennoil
 user.name "Ville Kauppinen"**. Sitten vielä laitoin githubin kirjautumisen muistiin komennolla **git config --global credential.helper "cache --timeout=3600". Tämä siksi
 ettei tarvitse, joka kerta repositorya muokatessa laittaa käyttäjätunnusta ja salasanaa.
 
-Tekstiä
+Aloitin luomalla moduulille kansion /etc/puppet/modules/ paikkaan komennolla **sudo mkdir xtermcolors**. Sen sisään tein kansiot templates ja manifests. Manifests kansion sisään
+tein tiedoston init.pp komennolla **sudoedit init.pp** jonne kirjoitin seuraavan koodinpätkän: ![alt text](/home/ville/Pictures/modulecode.png)
