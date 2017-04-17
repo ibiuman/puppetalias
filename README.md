@@ -21,10 +21,9 @@ Sitten menin templates kansioon ja syötin komennon **sudo cp /etc/X11/app-defau
 XTerm-color tiedoston templates kansioon ja vaihdoin samalla sen tiedostonimen perään .erb. Tämän jälkeen **sudoedit XTerm-color.erb** komennolla kävin vaihtamassa
 *VT100*foreground: ja *VT100*background: kohdat haluamakseni väreiksi. 
 
-Ennen moduulit suorittamista xterm näytti tältä:
- ![alt text](https://github.com/ibiuman/puppetalias/blob/master/xtermbefore.png). Moduuli ajettiin komennolla
+Ennen moduulit suorittamista xterm näytti tältä: ![alt text](https://github.com/ibiuman/puppetalias/blob/master/xtermbefore.png). Moduuli ajettiin komennolla
 **sudo puppet apply -e 'file {"xtermcolors":}'**. Tämän jälkeen xterm näyttää tältä: ![alt text](https://github.com/ibiuman/puppetalias/blob/master/xtermafter.png)
-Sitten kopioimme vielä tuon moduulikansion git projektikansioon ja siirsimme sen sieltä itse githubiin.
+Sitten kopioimme vielä tuon moduulikansion git projektikansioon ja siirsimme sen sieltä itse githubiin seuraavilla komennoilla ja nämä komennot pitää laittaa tässä järjestyksessä: **git add .**, **git commit**, **git pull**, **git push**.
 
 ### Lähteet ###
 http://terokarvinen.com/2017/aikataulu-%E2%80%93-palvelinten-hallinta-ict4tn022-2-%E2%80%93-5-op-uusi-ops-loppukevat-2017-p2
