@@ -12,7 +12,7 @@ kirjoitin jotain tekstiä ja sitten käytin komentoja **git add .** ja **git com
 ### Modulin luonti ja testaus ###
 Aloitin tekemällä githubiin uuden repositoryn tehtävää varten. Tämän jälkeen suoritin komennon **git clone https://github.com/ibiuman/puppetalias.git**, jotta
 pääsemme muokkaamaan tuota repositorya. Kerroimme gitille kuka olen kommennoilla **git config --global user.mail "ville.kauppinen@gmail.com"** ja **git config --global
-user.name "Ville Kauppinen"**. Sitten vielä laitoin githubin kirjautumisen muistiin komennolla **git config --global credential.helper "cache --timeout=3600". Tämä siksi
+user.name "Ville Kauppinen"**. Sitten vielä laitoin githubin kirjautumisen muistiin komennolla **git config --global credential.helper "cache --timeout=3600"**. Tämä siksi
 ettei tarvitse, joka kerta repositorya muokatessa laittaa käyttäjätunnusta ja salasanaa.
 
 Aloitin luomalla moduulille kansion /etc/puppet/modules/ paikkaan komennolla **sudo mkdir xtermcolors**. Sen sisään tein kansiot templates ja manifests. Manifests kansion sisään
@@ -21,7 +21,8 @@ Sitten menin templates kansioon ja syötin komennon **sudo cp /etc/X11/app-defau
 XTerm-color tiedoston templates kansioon ja vaihdoin samalla sen tiedostonimen perään .erb. Tämän jälkeen **sudoedit XTerm-color.erb** komennolla kävin vaihtamassa
 *VT100*foreground: ja *VT100*background: kohdat haluamakseni väreiksi. 
 
-Ennen moduulit suorittamista xterm näytti tältä: ![alt text](https://github.com/ibiuman/puppetalias/blob/master/xtermbefore.png). Moduuli ajettiin komennolla
+Ennen moduulit suorittamista xterm näytti tältä:
+ ![alt text](https://github.com/ibiuman/puppetalias/blob/master/xtermbefore.png). Moduuli ajettiin komennolla
 **sudo puppet apply -e 'file {"xtermcolors":}'**. Tämän jälkeen xterm näyttää tältä: ![alt text](https://github.com/ibiuman/puppetalias/blob/master/xtermafter.png)
 Sitten kopioimme vielä tuon moduulikansion git projektikansioon ja siirsimme sen sieltä itse githubiin.
 
